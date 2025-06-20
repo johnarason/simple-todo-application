@@ -15,12 +15,11 @@ let tasks = [
  * 
  */
 function addTask(title) {
-    const task = { isDone: false }
+    const task = { 
+        title: title,  
+        isDone: false 
+    };
 
-    // やることのタイトルを設定(このままだと、すべてのタイトルがHello Worldになってしまう！)
-    task.title = "Hello World"
-
-    // 以降は無視して良い
     tasks.push(task);
     drawTask(task, tasks.length - 1);
 }
